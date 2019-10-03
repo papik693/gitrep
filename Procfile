@@ -1,1 +1,0 @@
-web: waitress-serve {django_project}.application
