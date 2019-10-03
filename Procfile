@@ -1,0 +1,1 @@
+web: waitress-serve {django_project}.wsgi:application
