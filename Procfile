@@ -1,1 +1,1 @@
-web: waitress-serve --port=$PORT --url-scheme=https app:wsgifunc
+web: waitress-serve --port=$PORT --url-scheme=https django_project.wsgi
