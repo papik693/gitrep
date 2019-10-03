@@ -21,10 +21,10 @@ def newbook(data):
         book.pageCount = item['volumeInfo'].get("pageCount", 0)
         book.imageLinks = item['volumeInfo'].get('imageLinks', 0)
         book.language = item['volumeInfo'].get('language', 0)
-        # if Books.objects.filter(title=title).exists():
-        #     pass
-        # else:
-        #     book.save(title)
+        if Books.objects.filter(title=title).exists():
+            pass
+        else:
+            book.save(title)
 
 
 class BooksFilter(filters.FilterSet):
